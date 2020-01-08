@@ -9,3 +9,4 @@ Started on 1/6/2020 to practice Go using Project Euler problems.
 6. Sum square difference (Complete)
 7. 10 001st prime (Complete)
 8. Largest product in a series (Complete)
+9. Special Pythagorean triplet 
