@@ -12,17 +12,25 @@ import "fmt"
 //Increase B ++ , decrease C ++, check again until out of numbers.
 //Then increase A ++, set b to A + 1, set C to (1000 - A + B), and loop again
 
-
-
-
 func main() {
 
 	a := 1
 	b := a + 1
 	c := 1000 - (a + b)
 
-	for ; a < 995 ; a ++ {
-		
+	for ; ((a + b) <= 1000) && ((a*a) + (b*b) < (c*c)) ; a ++ {
+		for ; ((a + b) <= 1000) && ((a*a) + (b*b) < (c*c)) ; b ++ {
+			c = 1000 - (a + b)
+			sum := (a * a ) + ( b * b )
+			cval := (c * c )
+			if sum == cval {
+				fmt.Printf("The value of A is %d, the value of B is %d, the value of C is %d", a, b, c)
+				answer := (a * b * c )
+				fmt.Printf("The answer is: %d.", answer)
+				return
+			}
+		} 
+		b = a + 1
+		c = 1000 - (a + b)
 	}
-	fmt.Println("vim-go")
 }

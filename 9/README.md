@@ -28,3 +28,7 @@ Does a squared plus b squared equal c squared? No
 Increase B ++ , decrease C ++, check again until out of numbers.
 Then increase A ++, set b to A + 1, set C to (1000 - A + B), and loop again
 
+Does 
+(a * a ) + ( b * b ) = (c * c) ? No
+
+Increase B through all available options
